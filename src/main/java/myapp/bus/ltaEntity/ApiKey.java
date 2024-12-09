@@ -5,5 +5,5 @@ import lombok.Getter;
 public class ApiKey {
   // just to store the API Key for now
     // my api key
-    public static final String myApiKey = "TomuLTlOSjOWXSaaM6dxuw==";
+    public static final String myApiKey = "<PUT YOUR API KEY HERE>";
 }
