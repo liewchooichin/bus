@@ -30,6 +30,8 @@ The actual usage can be found here.
 
 https://stackoverflow.com/questions/71588089/how-do-you-hide-api-key-when-using-spring-boot-with-maven
 
+https://stackoverflow.com/questions/73339170/spring-boot-value-annotation-picks-up-key-from-application-properties-but-does
+
 Store the key in **application-dev.properties**.
 `myApiKey=<API KEY>`
 
