@@ -12,6 +12,14 @@ public class ApiKey {
 }
 ```
 
+### From Daniel's reply:
+
+For API keys, you will learn how to handle it with secrets management in the next module.
+
+A simple solution for now is to store your general application settings in `application.properties`, and the api key in `application-dev.properties` but git ignore the  `application-dev.properties`.   Then share this file directly with your teammates.  We are just trying to avoid exposing the API key in the Github repository.
+
+Remember to set the active profile with `spring.profiles.active=dev` in `application.properties`.
+
 ## Rest Client
 
 ## Reference that works:
