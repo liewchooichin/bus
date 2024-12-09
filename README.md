@@ -8,7 +8,11 @@ Put your API key here. Yet to find out how to safely secure the key.
 public class ApiKey {
   // just to store the API Key for now
     // my api key
-    public static final String myApiKey = "<PUT YOUR API KEY HERE>";
+    public class ApiKey {
+  // just to store the API Key for now
+    // my api key
+    @Value("${myApiKey}")
+    public static String myApiKey;
 }
 ```
 
@@ -19,6 +23,22 @@ For API keys, you will learn how to handle it with secrets management in the nex
 A simple solution for now is to store your general application settings in `application.properties`, and the api key in `application-dev.properties` but git ignore the  `application-dev.properties`.   Then share this file directly with your teammates.  We are just trying to avoid exposing the API key in the Github repository.
 
 Remember to set the active profile with `spring.profiles.active=dev` in `application.properties`.
+
+### My additions:
+
+The actual usage can be found here.
+
+https://stackoverflow.com/questions/71588089/how-do-you-hide-api-key-when-using-spring-boot-with-maven
+
+Store the key in **application-dev.properties**.
+`myApiKey=<API KEY>`
+
+In the file ApiKey.java, I use the key.
+
+In **application.properties**, specify this:
+
+`spring.profiles.active=dev`
+
 
 ## Rest Client
 
