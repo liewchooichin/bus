@@ -1,5 +1,17 @@
 # Notes
 
+## API key
+
+Put your API key here. Yet to find out how to safely secure the key.
+
+```Java
+public class ApiKey {
+  // just to store the API Key for now
+    // my api key
+    public static final String myApiKey = "<PUT YOUR API KEY HERE>";
+}
+```
+
 ## Rest Client
 
 ## Reference that works:
